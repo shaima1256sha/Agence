@@ -1,36 +1,50 @@
 /* ^reset */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* ~general */
-:root{
-  --primary:#f1c40f;
-  --secondary:#333;
+:root {
+  --primary: #f1c40f;
+  --secondary: #333;
 }
-body{
+
+body {
   font-family: "Montserrat", sans-serif;
 }
-p{
+
+p {
   margin-bottom: 0.8rem;
 
 }
-h1,h2,h3,h4{
+
+strong {
+  font-weight: 400px;
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
   margin-bottom: 1rem;
 }
-a{
-  color:var(--secondary);
+
+a {
+  color: var(--secondary);
   text-decoration: none;
 }
-.vp-container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+.vp-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 /* header */
-header{
+header {
   padding: 1rem 2rem;
   background: var(--secondary);
   display: flex;
@@ -38,40 +52,67 @@ header{
   justify-content: space-between;
   line-height: 1.8rem;
 }
+
 header a {
   color: white;
 }
-.vp-logo{
-font-size: 1.8rem;
-margin-bottom: 0;
-font-family: "Long Cang", system-ui;
-display: flex;
-flex-flow: row nowrap;
-justify-content: center;
-align-items: center;
+
+.vp-logo {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  font-family: "Long Cang", system-ui;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 
 }
-header ul{
+
+header ul {
   display: flex;
   flex-flow: row nowrap;
   list-style: none;
 }
-header ul li{
+
+header ul li {
   padding: 1rem;
 }
-header ul li a:hover{
+
+header ul li a:hover {
   color: var(--primary);
 }
-.vp-logo i{
-  color:var(--primary);
+
+.vp-logo i {
+  color: var(--primary);
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 
+/* vp */
 
+.vp {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/frame.jpg) center center/cover;
+}
 
+.vp-content {
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
 
+.vp-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
 
-.vp{
-flex: auto;
+.vp-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  
 }
