@@ -13,6 +13,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #eee;
+  color: var(--secondary);
 }
 
 p {
@@ -41,6 +43,11 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.container{
+  display: block;
+  margin: auto;
+  max-width: 1200px;
 }
 
 /* header */
@@ -116,3 +123,39 @@ header ul li a:hover {
   margin-bottom: 2rem;
   
 }
+/* ^offer */
+.offer{
+  padding: 10rem 1rem;
+}
+.offer-list{
+  display: flex;
+  flex: row nowrap;
+  list-style: none;
+  justify-content: space-between;
+  
+}
+.offer-elem{
+  margin: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  flex:1;
+}
+.offer-elem-img{
+  width: 100%;
+}
+.offer-elem-text{
+  padding: 2rem;
+  text-align: center;
+}
+.offer-seperator{
+  width: 50px;
+  height: 2px;
+  background: var(--secondary);
+  margin: 1rem auto;
+  
+}
+.title{
+  font-weight: 300;
+  font-size: 2rem;
+}
+
