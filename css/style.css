@@ -17,6 +17,10 @@ body {
   color: var(--secondary);
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   margin-bottom: 0.8rem;
 
@@ -44,7 +48,8 @@ a {
   display: flex;
   flex-direction: column;
 }
-.container{
+
+.container {
   display: block;
   margin: auto;
   max-width: 1200px;
@@ -121,41 +126,119 @@ header ul li a:hover {
 .vp-content h1 {
   font-size: 3.2rem;
   margin-bottom: 2rem;
-  
+
 }
+
 /* ^offer */
-.offer{
+.offer {
   padding: 10rem 1rem;
 }
-.offer-list{
+
+.offer-list {
   display: flex;
   flex: row nowrap;
   list-style: none;
   justify-content: space-between;
-  
+
 }
-.offer-elem{
+
+.offer-elem {
   margin: 1rem;
   background: white;
   border: 1px solid #ddd;
-  flex:1;
+  flex: 1;
 }
-.offer-elem-img{
+
+.offer-elem-img {
   width: 100%;
 }
-.offer-elem-text{
+
+.offer-elem-text {
   padding: 2rem;
   text-align: center;
 }
-.offer-seperator{
+
+.offer-seperator {
   width: 50px;
   height: 2px;
   background: var(--secondary);
   margin: 1rem auto;
-  
+
 }
-.title{
+
+.title {
   font-weight: 300;
   font-size: 2rem;
 }
 
+.who {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.who-content-img {
+  flex: 1;
+}
+
+.who-content-img img {
+  width: 100%;
+}
+
+.who-content-text {
+  display: flex;
+  flex: 1;
+
+  color: white;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.who-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.who-content-text h2 {
+  margin-bottom: 2rem;
+}
+
+.bg-dark {
+  background: var(--secondary);
+  color: white;
+}
+
+.testimonials {
+  padding: 5rem 1rem;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-elm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+/* .testimonials-content:nth-child(1){
+  display: flex;
+  flex-direction: row-reverse;
+} */
+.testimonials-elm-text {
+  padding: 0 2rem;
+}
+
+.testimonials-elm-profil img {
+  width: 50px;
+  border-radius: 50px;
+}
