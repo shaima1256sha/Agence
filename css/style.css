@@ -9,7 +9,7 @@
 :root {
   --primary: #f1c40f;
   --secondary: #333;
-  --third:red;
+  --third: red;
 }
 
 body {
@@ -176,17 +176,16 @@ header ul li a:hover {
 .who {
   display: flex;
   flex-flow: row nowrap;
+  min-height: 600px;
 }
 
 .who-content-img {
   flex: 1;
-  background: url(../img/team.jpg) center center / cover;
-  
+  background: url(../img/team.jpg) center center/cover;
+
 }
 
-.who-content-img img {
-  width: 100%;
-}
+
 
 .who-content-text {
   display: flex;
@@ -247,28 +246,33 @@ header ul li a:hover {
   width: 50px;
   border-radius: 50px;
 }
-.testimonials-elm-profil p{
+
+.testimonials-elm-profil p {
   font-weight: 700;
   margin-bottom: 0.5rem;
-  
+
 }
-.testimonials-elm-text p i{
+
+.testimonials-elm-text p i {
   margin: 0.2rem;
 }
-.contact{
+
+.contact {
   padding: 10rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--secondary);
 }
-.contact-form{
-max-width: 600px;
-display: flex;
-flex-direction: column;
-width: 100%;
+
+.contact-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
-.contact-form input{
+
+.contact-form input {
   border: 0;
   border-bottom: 1px solid #ddd;
   background: var(--secondary);
@@ -277,10 +281,12 @@ width: 100%;
   font-size: 1.3rem;
   outline: 0;
 }
-.contact h2{
+
+.contact h2 {
   color: white;
 }
-.contact-form-button{
+
+.contact-form-button {
   background: var(--primary);
   color: white;
   padding: 1rem 2rem;
@@ -292,17 +298,19 @@ width: 100%;
   border: 0;
   font-size: 1.3rem;
 }
-.contact-form-button:hover{
-  background:var(--third);
+
+.contact-form-button:hover {
+  background: var(--third);
   color: white;
 }
-footer{
+
+footer {
   background: #444;
   color: white;
   padding: 4rem;
   text-align: center;
-  }
-  footer p {
-    margin-bottom: 0;
-  }
+}
 
+footer p {
+  margin-bottom: 0;
+}
